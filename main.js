@@ -15,6 +15,31 @@
         // remove duplicates (.reduce?)
         // count array length
 
+    let array = [];
+    let xCoord = 0;
+    let yCoord = 0;
+    switch (input) {
+        case '^':
+            yCoord += 1;
+        break;
+        case  '>':
+             xCoord += 1;
+        break;
+        case 'v':
+            yCoord -= 1;
+        break;
+        case '<':
+            xCoord -= 1;
+        break;
+    }
+
+
+    let reName = foreach((input) => {
+        // log xCoor & yCoor
+        // push to arry both x/y
+
+    });
+
 
 // part 2 
     // let maria = y coordinates
