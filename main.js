@@ -18,6 +18,8 @@
     let array = [];
     let xCoord = 0;
     let yCoord = 0;
+    // let inputs = ["^","v","^","v","^","v","^","v","^","v"];
+    let inputs = ['^','>','v','<'];
 
 
 inputs.forEach((input) => {
