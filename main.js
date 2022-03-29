@@ -8,6 +8,7 @@
         // south / west --> =-
     // push x,y values to an array
         // need to update value and log each time as x,y
+        // need to create array from string
     // can create unit test using the examples that they have given.
 
 // part 1
@@ -20,7 +21,9 @@
     let xCoord = 0;
     let yCoord = 0;
     // let inputs = ["^","v","^","v","^","v","^","v","^","v"];
-    let inputs = ['^','>','v','<'];
+    // let inputs = ['^','>','v','<'];
+    let rawInputs = "^>v<"
+    let inputs = rawInputs.split('');
 
 
 inputs.forEach((input) => {
