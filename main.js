@@ -7,6 +7,7 @@
         // north/east --> =+
         // south / west --> =-
     // push x,y values to an array
+        // need to update value and log each time as x,y
     // can create unit test using the examples that they have given.
 
 // part 1
