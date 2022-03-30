@@ -17,7 +17,7 @@
         // remove duplicates (.reduce?)
         // count array length
 
-    let array = [];
+    let array = ['xCoord = 0 yCoord = 0'];
     let xCoord = 0;
     let yCoord = 0;
     // let inputs = ["^","v","^","v","^","v","^","v","^","v"];
