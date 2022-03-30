@@ -66,6 +66,10 @@ inputs.forEach((input) => {
  let uniqueCoords = [...new Set(array)];
  console.log(uniqueCoords);
 
+// number of houses with at least 1 pizza
+console.log(`${uniqueCoords.length} houses receive at least one pizza`);
+
+
 // part 2 
     // let maria = y coordinates
     // let clovis = x coordinates
