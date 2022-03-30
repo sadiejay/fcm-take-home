@@ -31,18 +31,30 @@ inputs.forEach((input) => {
             case '^':
                 yCoord += 1;
                 console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+                array.push(yVal);
+                console.log(array);
             break;
             case  '>':
                  xCoord += 1;
                  console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+                array.push(xVal);
+                console.log(array);
             break;
             case 'v':
                 yCoord -= 1;
                 console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+                array.push(yVal);
+                console.log(array);
             break;
             case '<':
                 xCoord -= 1;
                 console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+                array.push(xVal);
+                console.log(array);
             break;
         }
     });
