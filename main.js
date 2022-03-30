@@ -22,7 +22,10 @@
     let yCoord = 0;
     // let inputs = ["^","v","^","v","^","v","^","v","^","v"];
     // let inputs = ['^','>','v','<'];
-    let rawInputs = "^>v<"
+    // let rawInputs = "^>v<"
+    let rawInputs = "^v^v^v^v^v"
+    // let rawInputs = ">"
+
     let inputs = rawInputs.split('');
 
 
