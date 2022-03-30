@@ -36,35 +36,35 @@ inputs.forEach((input) => {
                 // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                 var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
                 array.push(yVal);
-                console.log(array);
+                console.log({array});
             break;
             case  '>':
                  xCoord += 1;
                 //  console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                 var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
                 array.push(xVal);
-                console.log(array);
+                console.log({array});
             break;
             case 'v':
                 yCoord -= 1;
                 // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                 var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
                 array.push(yVal);
-                console.log(array);
+                console.log({array});
             break;
             case '<':
                 xCoord -= 1;
                 // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                 var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
                 array.push(xVal);
-                console.log(array);
+                console.log({array});
             break;
         }
     });
 
 // remove duplicates
  let uniqueCoords = [...new Set(array)];
- console.log(uniqueCoords);
+ console.log({uniqueCoords});
 
 // number of houses with at least 1 pizza
 console.log(`${uniqueCoords.length} houses receive at least one pizza`);
