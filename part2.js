@@ -50,25 +50,24 @@ mariaArray.forEach((input) => {
 
 
 clovisArray.forEach((input) => {
+    let clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+    let clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+
     switch (input) {
         case '^':
             clovisYCoord += 1;
-            clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisYVal);
             break;
         case '>':
             clovisXCoord += 1;
-            clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisXVal);
             break;
         case 'v':
             clovisYCoord -= 1;
-            clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisYVal);
             break;
         case '<':
             clovisXCoord -= 1;
-            clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisXVal);
             break;
     }
