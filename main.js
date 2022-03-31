@@ -77,3 +77,22 @@ console.log(`${uniqueCoords.length} houses receive at least one pizza`);
             // keep the same switch statements
             // push the results to the same list
             // also find uniquecoods 
+
+            let mariaArray = [];
+            function evenInputs(input){
+                for (var i = 0; i < input.length; i += 2){ //Add two to i every iteration
+                    mariaArray.push(input[i]); //Add the element at index i to a temporary array
+                }
+                console.log({mariaArray});
+            }
+
+            var clovisArray = [];
+            function oddInputs(input){
+                for (var i = 1; i < input.length; i += 2){ //Add two to i every iteration
+                    clovisArray.push(input[i]); //Add the element at index i to a temporary array
+                }
+                return console.log({clovisArray});
+            }
+
+            evenInputs(inputs);
+            oddInputs(inputs);
