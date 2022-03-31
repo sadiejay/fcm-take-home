@@ -2,6 +2,8 @@
 let array = ['xCoord = 0 yCoord = 0'];
 let xCoord = 0;
 let yCoord = 0;
+let xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+let yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
 
 // testing values
 let rawInputs = "^>v<"
@@ -17,22 +19,22 @@ inputs.forEach((input) => {
     switch (input) {
         case '^':
             yCoord += 1;
-            var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+            yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
             array.push(yVal);
             break;
         case '>':
             xCoord += 1;
-            var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+            xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
             array.push(xVal);
             break;
         case 'v':
             yCoord -= 1;
-            var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+            yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
             array.push(yVal);
             break;
         case '<':
             xCoord -= 1;
-            var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+            xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
             array.push(xVal);
             break;
     }
