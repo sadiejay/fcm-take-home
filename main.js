@@ -71,6 +71,9 @@ console.log(`${uniqueCoords.length} houses receive at least one pizza`);
 
 
 // part 2 
-    // let maria = y coordinates
-    // let clovis = x coordinates
-    // ?
+    // let maria = inputs[even]
+    // let clovis = inputs[odd]
+        // so maybe create two lists
+            // keep the same switch statements
+            // push the results to the same list
+            // also find uniquecoods 
