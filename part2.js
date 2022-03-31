@@ -1,15 +1,15 @@
 // part 2 
 let mariaArray = [];
 function evenInputs(input) {
-    for (var i = 0; i < input.length; i += 2) {
+    for (let i = 0; i < input.length; i += 2) {
         mariaArray.push(input[i]);
     }
     console.log({ mariaArray });
 };
 
-var clovisArray = [];
+let clovisArray = [];
 function oddInputs(input) {
-    for (var i = 1; i < input.length; i += 2) {
+    for (let i = 1; i < input.length; i += 2) {
         clovisArray.push(input[i]);
     }
     return console.log({ clovisArray });
@@ -25,25 +25,24 @@ let mariaYCoord = 0;
 let clovisXCoord = 0;
 let clovisYCoord = 0;
 mariaArray.forEach((input) => {
+    let mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+    let mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+
     switch (input) {
         case '^':
             mariaYCoord += 1;
-            mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaYVal);
             break;
         case '>':
             mariaXCoord += 1;
-            mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaXVal);
             break;
         case 'v':
             mariaYCoord -= 1;
-            mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaYVal);
             break;
         case '<':
             mariaXCoord -= 1;
-            mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaXVal);
             break;
     }
