@@ -28,22 +28,22 @@ mariaArray.forEach((input) => {
     switch (input) {
         case '^':
             mariaYCoord += 1;
-            var mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+            mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaYVal);
             break;
         case '>':
             mariaXCoord += 1;
-            var mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+            mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaXVal);
             break;
         case 'v':
             mariaYCoord -= 1;
-            var mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+            mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaYVal);
             break;
         case '<':
             mariaXCoord -= 1;
-            var mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+            mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaXVal);
             break;
     }
@@ -54,22 +54,22 @@ clovisArray.forEach((input) => {
     switch (input) {
         case '^':
             clovisYCoord += 1;
-            var clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+            clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisYVal);
             break;
         case '>':
             clovisXCoord += 1;
-            var clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+            clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisXVal);
             break;
         case 'v':
             clovisYCoord -= 1;
-            var clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+            clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisYVal);
             break;
         case '<':
             clovisXCoord -= 1;
-            var clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+            clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisXVal);
             break;
     }
