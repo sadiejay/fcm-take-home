@@ -5,7 +5,7 @@ function evenInputs(input) {
         mariaArray.push(input[i]);
     }
     console.log({ mariaArray });
-}
+};
 
 var clovisArray = [];
 function oddInputs(input) {
@@ -13,7 +13,7 @@ function oddInputs(input) {
         clovisArray.push(input[i]);
     }
     return console.log({ clovisArray });
-}
+};
 
 evenInputs(inputs);
 oddInputs(inputs);
