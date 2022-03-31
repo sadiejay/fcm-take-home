@@ -4,9 +4,9 @@ let xCoord = 0;
 let yCoord = 0;
 
 // testing values
-let rawInputs = "^>v<"
-// let rawInputs = "^v^v^v^v^v"
-// let rawInputs = ">"
+let rawInputs = "^>v<";
+// let rawInputs = "^v^v^v^v^v";
+// let rawInputs = ">";
 
 // takes raw input and splits 
 let inputs = rawInputs.split('');
