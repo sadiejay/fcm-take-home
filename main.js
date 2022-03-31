@@ -4,8 +4,8 @@ let xCoord = 0;
 let yCoord = 0;
 
 // testing values
-// let rawInputs = "^>v<"
-let rawInputs = "^v^v^v^v^v"
+let rawInputs = "^>v<"
+// let rawInputs = "^v^v^v^v^v"
 // let rawInputs = ">"
 
 // takes raw input and splits 
@@ -19,25 +19,21 @@ inputs.forEach((input) => {
             yCoord += 1;
             var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
             array.push(yVal);
-            console.log({ array });
             break;
         case '>':
             xCoord += 1;
             var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
             array.push(xVal);
-            console.log({ array });
             break;
         case 'v':
             yCoord -= 1;
             var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
             array.push(yVal);
-            console.log({ array });
             break;
         case '<':
             xCoord -= 1;
             var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
             array.push(xVal);
-            console.log({ array });
             break;
     }
 });
@@ -82,25 +78,21 @@ mariaArray.forEach((input) => {
             mariaYCoord += 1;
             var mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaYVal);
-            console.log({ duoarray });
             break;
         case '>':
             mariaXCoord += 1;
             var mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaXVal);
-            console.log({ duoarray });
             break;
         case 'v':
             mariaYCoord -= 1;
             var mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaYVal);
-            console.log({ duoarray });
             break;
         case '<':
             mariaXCoord -= 1;
             var mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
             duoarray.push(mariaXVal);
-            console.log({ duoarray });
             break;
     }
 });
@@ -112,25 +104,21 @@ clovisArray.forEach((input) => {
             clovisYCoord += 1;
             var clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisYVal);
-            console.log({ duoarray });
             break;
         case '>':
             clovisXCoord += 1;
             var clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisXVal);
-            console.log({ duoarray });
             break;
         case 'v':
             clovisYCoord -= 1;
             var clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisYVal);
-            console.log({ duoarray });
             break;
         case '<':
             clovisXCoord -= 1;
             var clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
             duoarray.push(clovisXVal);
-            console.log({ duoarray });
             break;
     }
 });
