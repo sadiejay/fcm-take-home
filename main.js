@@ -169,3 +169,11 @@ console.log(`${uniqueCoords.length} houses receive at least one pizza`);
                     break;
                 }
             });
+
+
+// remove duplicates
+let uniqueduoCoords = [...new Set(duoarray)];
+console.log({uniqueduoCoords});
+
+// number of houses with at least 1 pizza
+console.log(`${uniqueduoCoords.length} houses receive at least one pizza`);
