@@ -96,3 +96,76 @@ console.log(`${uniqueCoords.length} houses receive at least one pizza`);
 
             evenInputs(inputs);
             oddInputs(inputs);
+
+
+            let duoarray = ['xCoord = 0 yCoord = 0'];
+            let mariaXCoord = 0;
+            let mariaYCoord = 0;
+            let clovisXCoord = 0;
+            let clovisYCoord = 0;
+            mariaArray.forEach((input) => {
+                switch (input) {
+                    case '^':
+                        mariaYCoord += 1;
+                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                        var mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+                        duoarray.push(mariaYVal);
+                        console.log({duoarray});
+                    break;
+                    case  '>':
+                         mariaXCoord += 1;
+                        //  console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                        var mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+                        duoarray.push(mariaXVal);
+                        console.log({duoarray});
+                    break;
+                    case 'v':
+                        mariaYCoord -= 1;
+                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                        var mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+                        duoarray.push(mariaYVal);
+                        console.log({duoarray});
+                    break;
+                    case '<':
+                        mariaXCoord -= 1;
+                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                        var mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+                        duoarray.push(mariaXVal);
+                        console.log({duoarray});
+                    break;
+                }
+            });
+
+
+            clovisArray.forEach((input) => {
+                switch (input) {
+                    case '^':
+                        clovisYCoord += 1;
+                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                        var clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+                        duoarray.push(clovisYVal);
+                        console.log({duoarray});
+                    break;
+                    case  '>':
+                         clovisXCoord += 1;
+                        //  console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                        var clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+                        duoarray.push(clovisXVal);
+                        console.log({duoarray});
+                    break;
+                    case 'v':
+                        clovisYCoord -= 1;
+                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                        var clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+                        duoarray.push(clovisYVal);
+                        console.log({duoarray});
+                    break;
+                    case '<':
+                        clovisXCoord -= 1;
+                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
+                        var clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+                        duoarray.push(clovisXVal);
+                        console.log({duoarray});
+                    break;
+                }
+            });
