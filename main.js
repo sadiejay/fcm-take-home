@@ -1,60 +1,40 @@
-// to-do
-// change north (`^`), south (`v`), east (`>`), or west (`<`) into something readable
-    // create coordinates from these inputs
-        // north / south -->  y coordinates
-        // east / west --> x coordinates
-    // have coordinates =+ or =-
-        // north/east --> =+
-        // south / west --> =-
-    // push x,y values to an array
-        // need to update value and log each time as x,y
-        // need to create array from string
-    // can create unit test using the examples that they have given.
-
 // part 1
-    // array length +1 = number of pizzas delivered
-    // number of houses = number of unique coordinates
-        // remove duplicates (.reduce?)
-        // count array length
-
     let array = ['xCoord = 0 yCoord = 0'];
     let xCoord = 0;
     let yCoord = 0;
-    // let inputs = ["^","v","^","v","^","v","^","v","^","v"];
-    // let inputs = ['^','>','v','<'];
+
+// testing values
     // let rawInputs = "^>v<"
     let rawInputs = "^v^v^v^v^v"
     // let rawInputs = ">"
 
+// takes raw input and splits 
     let inputs = rawInputs.split('');
 
 
+// loop for evaluating inputs
 inputs.forEach((input) => {
         switch (input) {
             case '^':
                 yCoord += 1;
-                // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                 var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
                 array.push(yVal);
                 console.log({array});
             break;
             case  '>':
                  xCoord += 1;
-                //  console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                 var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
                 array.push(xVal);
                 console.log({array});
             break;
             case 'v':
                 yCoord -= 1;
-                // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                 var yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
                 array.push(yVal);
                 console.log({array});
             break;
             case '<':
                 xCoord -= 1;
-                // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                 var xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
                 array.push(xVal);
                 console.log({array});
@@ -71,25 +51,18 @@ console.log(`${uniqueCoords.length} houses receive at least one pizza`);
 
 
 // part 2 
-    // let maria = inputs[even]
-    // let clovis = inputs[odd]
-        // so maybe create two lists
-            // keep the same switch statements
-            // push the results to the same list
-            // also find uniquecoods 
-
             let mariaArray = [];
             function evenInputs(input){
-                for (var i = 0; i < input.length; i += 2){ //Add two to i every iteration
-                    mariaArray.push(input[i]); //Add the element at index i to a temporary array
+                for (var i = 0; i < input.length; i += 2){
+                    mariaArray.push(input[i]);
                 }
                 console.log({mariaArray});
             }
 
             var clovisArray = [];
             function oddInputs(input){
-                for (var i = 1; i < input.length; i += 2){ //Add two to i every iteration
-                    clovisArray.push(input[i]); //Add the element at index i to a temporary array
+                for (var i = 1; i < input.length; i += 2){
+                    clovisArray.push(input[i]);
                 }
                 return console.log({clovisArray});
             }
@@ -107,28 +80,24 @@ console.log(`${uniqueCoords.length} houses receive at least one pizza`);
                 switch (input) {
                     case '^':
                         mariaYCoord += 1;
-                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                         var mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
                         duoarray.push(mariaYVal);
                         console.log({duoarray});
                     break;
                     case  '>':
                          mariaXCoord += 1;
-                        //  console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                         var mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
                         duoarray.push(mariaXVal);
                         console.log({duoarray});
                     break;
                     case 'v':
                         mariaYCoord -= 1;
-                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                         var mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
                         duoarray.push(mariaYVal);
                         console.log({duoarray});
                     break;
                     case '<':
                         mariaXCoord -= 1;
-                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                         var mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
                         duoarray.push(mariaXVal);
                         console.log({duoarray});
@@ -141,28 +110,24 @@ console.log(`${uniqueCoords.length} houses receive at least one pizza`);
                 switch (input) {
                     case '^':
                         clovisYCoord += 1;
-                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                         var clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
                         duoarray.push(clovisYVal);
                         console.log({duoarray});
                     break;
                     case  '>':
                          clovisXCoord += 1;
-                        //  console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                         var clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
                         duoarray.push(clovisXVal);
                         console.log({duoarray});
                     break;
                     case 'v':
                         clovisYCoord -= 1;
-                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                         var clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
                         duoarray.push(clovisYVal);
                         console.log({duoarray});
                     break;
                     case '<':
                         clovisXCoord -= 1;
-                        // console.log(`xCoord = ${xCoord} yCoord = ${yCoord}`);
                         var clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
                         duoarray.push(clovisXVal);
                         console.log({duoarray});
