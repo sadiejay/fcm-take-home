@@ -41,9 +41,7 @@ inputs.forEach((input) => {
 // remove duplicates
 let uniqueCoords = [...new Set(array)];
 console.log({ uniqueCoords });
-
-// number of houses with at least 1 pizza
-console.log(`${uniqueCoords.length} houses receive at least one pizza`);
+console.log(`Maria delivers at least one pizza to ${uniqueCoords.length} houses`);
 
 
 // part 2 
@@ -127,6 +125,4 @@ clovisArray.forEach((input) => {
 // remove duplicates
 let uniqueduoCoords = [...new Set(duoarray)];
 console.log({ uniqueduoCoords });
-
-// number of houses with at least 1 pizza
-console.log(`${uniqueduoCoords.length} houses receive at least one pizza`);
+console.log(`Clovis and Maria deliver at least one pizza to ${uniqueduoCoords.length} houses`);
