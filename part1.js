@@ -7,13 +7,13 @@
 // let rawInputs = ">";
 
 // get Data
-let getData = async (inputFile) => {
+export const getData = async (inputFile) => {
     let rawInputs = await fetch(inputFile)
         .then(response => response.text());
     return rawInputs;
 }
 
-let processData = (rawInputs) => {
+export const processData = (rawInputs) => {
     let array = ['xCoord = 0 yCoord = 0'];
     let xCoord = 0;
     let yCoord = 0;
