@@ -1,12 +1,12 @@
 // part 2
 
-let getDuoData = async () => {
-    let rawDuoInputs = await fetch('input.txt')
+export const getDuoData = async (inputfile) => {
+    let rawDuoInputs = await fetch(inputfile)
         .then(response => response.text());
     return rawDuoInputs;
 }
 
-let processDuoData = (rawDuoInputs) => {
+export const processDuoData = (rawDuoInputs) => {
     let mariaArray = [];
     function evenInputs(input) {
         for (let i = 0; i < input.length; i += 2) {
@@ -87,5 +87,5 @@ let processDuoData = (rawDuoInputs) => {
     return uniqueduoCoords.length;
 }
 
-getDuoData().then(data => processDuoData(data))
+getDuoData('input.txt').then(data => processDuoData(data))
     .then(uniqueduoCoordsLength => console.log(`🍕 Clovis and Maria deliver at least one pizza to ${uniqueduoCoordsLength} houses 🍕`));
