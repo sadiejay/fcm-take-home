@@ -33,52 +33,47 @@ export const processDuoData = (rawDuoInputs) => {
     let clovisXCoord = 0;
     let clovisYCoord = 0;
     mariaArray.forEach((input) => {
-        let mariaXVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
-        let mariaYVal = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+
 
         switch (input) {
             case '^':
                 mariaYCoord += 1;
-                duoarray.push(mariaYVal);
                 break;
             case '>':
                 mariaXCoord += 1;
-                duoarray.push(mariaXVal);
                 break;
             case 'v':
                 mariaYCoord -= 1;
-                duoarray.push(mariaYVal);
                 break;
             case '<':
                 mariaXCoord -= 1;
-                duoarray.push(mariaXVal);
+                
                 break;
         }
+        let mariaCoordDetail = `xCoord = ${mariaXCoord} yCoord = ${mariaYCoord}`;
+        duoarray.push(mariaCoordDetail);
     });
 
 
     clovisArray.forEach((input) => {
-        let clovisXVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
-        let clovisYVal = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+
 
         switch (input) {
             case '^':
                 clovisYCoord += 1;
-                duoarray.push(clovisYVal);
                 break;
             case '>':
                 clovisXCoord += 1;
-                duoarray.push(clovisXVal);
                 break;
             case 'v':
                 clovisYCoord -= 1;
-                duoarray.push(clovisYVal);
                 break;
             case '<':
                 clovisXCoord -= 1;
-                duoarray.push(clovisXVal);
                 break;
         }
+        let clovisCoordDetail = `xCoord = ${clovisXCoord} yCoord = ${clovisYCoord}`;
+        duoarray.push(clovisCoordDetail);
     });
 
     // remove duplicates
