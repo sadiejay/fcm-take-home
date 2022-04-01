@@ -7,8 +7,8 @@
 // let rawInputs = ">";
 
 // get Data
-let getData = async () => {
-    let rawInputs = await fetch('input.txt')
+let getData = async (inputFile) => {
+    let rawInputs = await fetch(inputFile)
         .then(response => response.text());
     return rawInputs;
 }
@@ -25,27 +25,23 @@ let processData = (rawInputs) => {
 
     // loop for evaluating inputs
     inputs.forEach((input) => {
-        let xVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
-        let yVal = `xCoord = ${xCoord} yCoord = ${yCoord}`;
 
         switch (input) {
             case '^':
                 yCoord += 1;
-                array.push(yVal);
                 break;
             case '>':
                 xCoord += 1;
-                array.push(xVal);
                 break;
             case 'v':
                 yCoord -= 1;
-                array.push(yVal);
                 break;
             case '<':
                 xCoord -= 1;
-                array.push(xVal);
                 break;
         }
+        let coordDetails = `xCoord = ${xCoord} yCoord = ${yCoord}`;
+        array.push(coordDetails);
     });
 
     // remove duplicates
@@ -56,8 +52,6 @@ let processData = (rawInputs) => {
 
 }
 
-console.log(processData(">"));
-getData().then(data => processData(data))
-.then(uniqueCoordsLength => console.log(`🍕 Maria delivers at least one pizza to ${uniqueCoordsLength} houses 🍕`))
-
+getData('input.txt').then(data => processData(data))
+    .then(uniqueCoordsLength => console.log(`🍕 Maria delivers at least one pizza to ${uniqueCoordsLength} houses 🍕`))
 
