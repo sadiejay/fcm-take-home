@@ -1,17 +1,11 @@
 // part 1
 
-
-// testing values
-// let rawInputs = "^>v<";
-// let rawInputs = "^v^v^v^v^v";
-// let rawInputs = ">";
-
 // get Data
 export const getData = async (inputFile) => {
     let rawInputs = await fetch(inputFile)
         .then(response => response.text());
     return rawInputs;
-}
+};
 
 export const processData = (rawInputs) => {
     let array = ['xCoord = 0 yCoord = 0'];
@@ -44,14 +38,11 @@ export const processData = (rawInputs) => {
         array.push(coordDetails);
     });
 
-    // remove duplicates
+    // remove duplicates and creates new array
     let uniqueCoords = [...new Set(array)];
-    console.log({ array });
-    console.log({ uniqueCoords });
     return uniqueCoords.length;
-
-}
+};
 
 getData('input.txt').then(data => processData(data))
-    .then(uniqueCoordsLength => console.log(`🍕 Maria delivers at least one pizza to ${uniqueCoordsLength} houses 🍕`))
+    .then(uniqueCoordsLength => console.log(`🍕 Maria delivers at least one pizza to ${uniqueCoordsLength} houses 🍕`));
 
