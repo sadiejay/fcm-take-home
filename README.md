@@ -23,6 +23,7 @@ Users should be able to:
 - View, in console, number of pizzas delivered by Maria and Clovis
 
 ### Screenshot
+<img width="476" alt="Screen Shot 2022-04-01 at 5 22 49 PM" src="https://user-images.githubusercontent.com/19538219/161349776-ca992bb1-2959-4f69-93d2-9423bc3032df.png">
 
 
 
