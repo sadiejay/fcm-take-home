@@ -41,7 +41,7 @@ Users should be able to:
   - Log remaining (number of housese) in console
   - Cleaned up comments and indentation
 - Set up input reader
--   Used async functin to read `.txt` file
+  -  Used async functin to read `.txt` file
 - Created test files from prompt
 
 ### Built with
