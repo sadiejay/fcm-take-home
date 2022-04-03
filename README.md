@@ -1,6 +1,6 @@
 # fcm-take-home
 
-A pizza delievering calculator of provided inputs 🍕
+A pizza delivering calculator of provided inputs 🍕
 
 ## Table of contents
 
